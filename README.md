@@ -1,28 +1,17 @@
-# Avances
-Avances de 1er Semestre Carrera ITC
+Proyecto ITC 1er Semestre - CalcuTEC
 
-Proyecto - Banco
-
-En esta ocasión propondré hacer un prototipo de banco sencillo, donde se pueda retirar y transferir dinero entre mismas cuentas ya creadas por el usuario, ya que esta no llevará base de datos, todos los datos serán temporales y solo serán para el uso del prototipo.
+En este proyecto, se desarrollará un prototipo de una calculadora cientifica llamada CalcuTEC, que hasta el momento solo permitirá realizar operaciones básicas de suma y resta, (en un futuro se irá actualizando con más funciones). Este prototipo servirá como base para futuros desarrollos en los que se puedan implementar más funciones.
 
 ALGORITMO
-
-1. Abrir programa
-2. Pedir nombre principal (no exceder de 15 caracteres)
-3. Pedir monto de dinero inicial
-4. Guiar a la segunda pagina
-5. Tener varios botones, como el de retirar, ingresar o transferir dinero
-
-RETIRAR
-1. Seleccionar monto a retirar (ya definido, entre 500, 1000 y 1500)
-2. Comprobar que el usuario tiene el monto suficiente como para retirar (si si se puede, seguir, si no, sacar aviso de no tener monto suficiente)
-3. Se retira el monto
-4. Finaliza el programa
-
-TRANSFERENCIA
-1. Seleccionar monto a retirar (ya definido, entre 500, 1000 y 1500)
-2. Comprobar que el usuario tiene el monto suficiente como para retirar (si si se puede, seguir, si no, sacar aviso de no tener monto suficiente)
-3. Seleccionar el usuario a transferir
-4. Se retira el monto
-5. Se le ingresa el monto a el otro usuario
+Abrir programa: Al iniciar, se desplegará la interfaz de la calculadora.
+Mostrar pantalla de entrada: Un espacio donde se mostrará la operación y el resultado.
+Botones de entrada:
+Números (0-9): Permiten ingresar los valores que se desean operar.
+Operadores: Botones para la suma (+) y la resta (-).
+Igual (=): Muestra el resultado de la operación en la pantalla de entrada.
+Clear (C): Limpia la pantalla de entrada y resetea la operación.
+Realizar operación:
+Se suma o resta el valor ingresado con el valor existente en la pantalla.
+Se muestra el resultado en la pantalla de entrada.
+Finalizar: Permite al usuario cerrar el programa.
 6. Finaliza el programa
