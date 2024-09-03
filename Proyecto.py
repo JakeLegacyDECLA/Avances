@@ -32,6 +32,28 @@ def resta():
     """
     return resta
 
+def multi():
+    multi = num1 * num2
+    """
+    (uso de funciones)
+    recibe: num1 valor numerico, num2 valor numerico
+    multiplica 2 numeros
+    devuelve: variable con los numeros multiplicados
+    """
+    return multi
+
+def division():
+    division = num1 / num2
+    """
+    (uso de funciones)
+    recibe: num1 valor numerico, num2 valor numerico
+    divide 2 numeros
+    devuelve: variable con los numeros divididos
+    """
+    return division
+
+
+
 
 """
 (uso de condicionales, funciones)
@@ -53,3 +75,17 @@ if pregunta == "resta" or pregunta == "2":
     resultado_resta = resta()
     print("La resta de los dos numeros es: ", resultado_resta)
 
+if pregunta == "multiplicacion" or pregunta == "4":
+    num1 = float(input("Ingresar primer numero: "))
+    num2 = float(input("Ingresar segundo numero: "))
+    resultado_multi = multi()
+    print("La resta de los dos numeros es: ", resultado_multi)
+
+if pregunta == "division" or pregunta == "3":
+    num1 = float(input("Ingresar primer numero: "))
+    num2 = float(input("Ingresar segundo numero: "))
+    resultado_division = division()
+    print("La resta de los dos numeros es: ", resultado_division)
+
+if pregunta == "" or pregunta >= "5":
+    print("Esa funcion no existe en la calculadora")
