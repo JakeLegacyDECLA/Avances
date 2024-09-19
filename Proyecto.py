@@ -12,45 +12,100 @@ pregunta = input("Seleccione su operacion a hacer \n 1. Suma \n 2. Resta \n 3. D
 
 
 def suma():
-    suma = num1 + num2
+
     """
-    (uso de funciones)
-    recibe: num1 valor numerico, num2 valor numerico
-    suma 2 numeros
-    devuelve: variable con los numeros sumados
+    (uso de funciones, condicional, ciclo)
+    recibe: n, valores numericos
+    suma n numeros ingresados hasta que el usuario ingrese la palabra "stop"
+    devuelve: variable auxiliar con los numeros sumados
     """
-    return suma
+
+    sumatotal = 0
+    stop = ""
+
+    while stop.lower() != "stop":
+        stop = input("Ingrese sus numeros (PALABRA DE PARO: STOP): ")
+
+        if stop.lower() != "stop":
+            sumatotal += float(stop)
+
+    return sumatotal
 
 
 def resta():
-    resta = num1 - num2
     """
-    (uso de funciones)
-    recibe: num1 valor numerico, num2 valor numerico
-    resta 2 numeros
-    devuelve: variable con los numeros restados
+    (uso de funciones, condicionales, ciclo)
+    recibe: n, valores numericos
+    resta n numeros ingresados hasta que el usuario ingrese la palabra "stop"
+    devuelve: variable auxiliar con los numeros restados
     """
-    return resta
+
+    resta_total = None
+    stop = ""
+
+    while stop.lower() != "stop":
+        stop = input("Ingrese sus numeros (PALABRA DE PARO: STOP): ")
+
+        if stop.lower() != "stop":
+            numero = float(stop)
+
+            if resta_total is None:
+                resta_total = numero 
+            else:
+                resta_total -= numero  
+
+    return resta_total
 
 def multi():
-    multi = num1 * num2
     """
-    (uso de funciones)
-    recibe: num1 valor numerico, num2 valor numerico
-    multiplica 2 numeros
-    devuelve: variable con los numeros multiplicados
+    (uso de funciones, condicionales, ciclo)
+    recibe: n, valores numericos
+    multiplica n numeros ingresados hasta que el usuario ingrese la palabra "stop"
+    devuelve: variable auxiliar con los numeros multiplicados
     """
-    return multi
+
+    multi_total = None
+    stop = ""
+
+    while stop.lower() != "stop":
+        stop = input("Ingrese sus numeros (PALABRA DE PARO: STOP): ")
+
+        if stop.lower() != "stop":
+            numero = float(stop)
+
+            if multi_total is None:
+                multi_total = numero
+            else:
+                multi_total *= numero
+
+    return multi_total
 
 def division():
-    division = num1 / num2
     """
-    (uso de funciones)
-    recibe: num1 valor numerico, num2 valor numerico
-    divide 2 numeros
-    devuelve: variable con los numeros divididos
+    (uso de funciones, condicionales, ciclo)
+    recibe: n, valores numericos
+    divide los numeros ingresados hasta que el usuario ingrese la palabra "stop"
+    devuelve: variable auxiliar con los numeros divididos
     """
-    return division
+
+    division_total = None
+    stop = ""
+
+    while stop.lower() != "stop":
+        stop = input("Ingrese sus numeros (PALABRA DE PARO: STOP): ")
+
+        if stop.lower() != "stop":
+            numero = float(stop)
+
+            if division_total is None:
+                division_total = numero
+            else:
+                if numero != 0:
+                    division_total /= numero
+                else:
+                    return "Error: Division entre cero no permitida"
+
+    return division_total
 
 
 
@@ -63,29 +118,24 @@ Adicionalmente, se hace uso de las primeras funciones para poder enseñar los re
 devuelve: resultado de la operación matematica.
 """
 
+
 if pregunta == "suma" or pregunta == "1":
-    num1 = float(input("Ingresar primer numero: "))
-    num2 = float(input("Ingresar segundo numero: "))
     resultado_suma = suma()
-    print("La suma de los dos numeros es:", resultado_suma)
+    print("La suma de los numeros integrados es: ", resultado_suma)
 
-if pregunta == "resta" or pregunta == "2":
-    num1 = float(input("Ingresar primer numero: "))
-    num2 = float(input("Ingresar segundo numero: "))
+elif pregunta == "resta" or pregunta == "2":
     resultado_resta = resta()
-    print("La resta de los dos numeros es: ", resultado_resta)
+    print("La resta de los numeros integrados es: ", resultado_resta)
 
-if pregunta == "multiplicacion" or pregunta == "4":
-    num1 = float(input("Ingresar primer numero: "))
-    num2 = float(input("Ingresar segundo numero: "))
+elif pregunta == "multiplicacion" or pregunta == "4":
     resultado_multi = multi()
-    print("La resta de los dos numeros es: ", resultado_multi)
+    print("La resta de los numeros ingresados es: ", resultado_multi)
 
-if pregunta == "division" or pregunta == "3":
-    num1 = float(input("Ingresar primer numero: "))
-    num2 = float(input("Ingresar segundo numero: "))
+elif pregunta == "division" or pregunta == "3":
     resultado_division = division()
-    print("La resta de los dos numeros es: ", resultado_division)
+    print("La resta de los numeros ingresados es: ", resultado_division)
 
-if pregunta == "" or pregunta >= "5":
+elif pregunta == "" or pregunta >= "5":
     print("Esa funcion no existe en la calculadora")
+
+        
