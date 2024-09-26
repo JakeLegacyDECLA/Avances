@@ -6,3 +6,8 @@ ACTUALIZACIÓN 19/09/24
 + Se añadieron ciclos
 + Se añadieron booleanos (especificamente el "Not" !=)
 + Las operaciones aceptan numeros ilimitados hasta que el usuario decide parar
+
+ACTUALIZACIÓN 26/09/24
++ Se añadió la función "obtener_numeros()" que facilita la obtención de datos insertados por el usuario
++ Se añadieron ciclos "for" para leer lista
++ Ahora no se puede dividir entre 0
