@@ -5,10 +5,11 @@ despues hacer calculos matematicos simples e incluso complejos
 en base a las mismas formulas y usos que nos permite realizar
 Python, al final, el resultado es puesto en pantalla.
 """
-
+import numpy as np
 
 print("Calculadora Cientifica")
-pregunta = input("Seleccione su operacion a hacer \n 1. Suma \n 2. Resta \n 3. Division \n 4. Multiplicacion \n").lower()
+pregunta = input("Seleccione su operacion a hacer \n 1. Suma \n 2. Resta \n 3. Division \n 4. Multiplicacion \n 5. Tablas de Multiplicar \n").lower()
+pregunta = pregunta.lower()
 
 def obtener_numeros():
     """
@@ -86,6 +87,13 @@ def division(numeros):
 
     return division_total
 
+def tabla_multiplicar(numero):
+    tabla = [[numero * i for i in range(1, 11)]]
+    
+    for i in range(1, 11):
+        print(f"{numero} x {i} = {numero * i}")
+
+    return tabla
 
 
 
@@ -118,7 +126,11 @@ elif pregunta == "division" or pregunta == "3":
     resultado_division = division(numeros)
     print(f"La resta de {numeros} ingresados es: ", resultado_division)
 
-elif pregunta == "" or pregunta >= "5":
+elif pregunta == "tablas" or pregunta == "5":
+    numero = int(input("Ingresa un número para mostrar su tabla de multiplicar: "))
+    tabla_multiplicar(numero)
+
+elif pregunta == "" or pregunta >= "6":
     print("Esa funcion no existe en la calculadora")
 
         
