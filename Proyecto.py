@@ -7,10 +7,6 @@ Python, al final, el resultado es puesto en pantalla.
 """
 import numpy as np
 
-print("Calculadora Cientifica")
-pregunta = input("Seleccione su operacion a hacer \n 1. Suma \n 2. Resta \n 3. Division \n 4. Multiplicacion \n 5. Tablas de Multiplicar \n").lower()
-pregunta = pregunta.lower()
-
 def obtener_numeros():
     """
     (uso de funciones, condicionales, ciclo)
@@ -88,15 +84,6 @@ def division(numeros):
     return division_total
 
 def tabla_multiplicar(numero):
-    """
-    (uso de funciones, listas)
-    recibe: listas
-    se crea una lista anidada que contiene
-    los numeros del 1 al 10, para despues
-    multiplicar el numero dado por el usuario
-    con los de la lista
-    devuelve: la tabla del 1 al 10 del numero otorgado
-    """
     tabla = [[numero * i for i in range(1, 11)]]
     
     for i in range(1, 11):
@@ -114,32 +101,38 @@ Adicionalmente, se hace uso de las primeras funciones para poder enseñar los re
 devuelve: resultado de la operación matematica.
 """
 
+def main():
 
-if pregunta == "suma" or pregunta == "1":
-    numeros = obtener_numeros()
-    resultado_suma = suma(numeros)
-    print(f"La suma de {numeros} integrados es: ", resultado_suma)
+    print("CalcuTEC")
+    pregunta = input("Seleccione su operacion a hacer \n 1. Suma \n 2. Resta \n 3. Division \n 4. Multiplicacion \n 5. Tablas de Multiplicar \n").lower()
+    pregunta = pregunta.lower()
 
-elif pregunta == "resta" or pregunta == "2":
-    numeros = obtener_numeros()
-    resultado_resta = resta(numeros)
-    print(f"La resta de {numeros} integrados es: ", resultado_resta)
+    if pregunta == "suma" or pregunta == "1":
+        numeros = obtener_numeros()
+        resultado_suma = suma(numeros)
+        print(f"La suma de {numeros} integrados es: ", resultado_suma)
 
-elif pregunta == "multiplicacion" or pregunta == "4":
-    numeros = obtener_numeros()
-    resultado_multi = multi(numeros)
-    print(f"La resta de {numeros} ingresados es: ", resultado_multi)
+    elif pregunta == "resta" or pregunta == "2":
+        numeros = obtener_numeros()
+        resultado_resta = resta(numeros)
+        print(f"La resta de {numeros} integrados es: ", resultado_resta)
 
-elif pregunta == "division" or pregunta == "3":
-    numeros = obtener_numeros()
-    resultado_division = division(numeros)
-    print(f"La resta de {numeros} ingresados es: ", resultado_division)
+    elif pregunta == "multiplicacion" or pregunta == "4":
+        numeros = obtener_numeros()
+        resultado_multi = multi(numeros)
+        print(f"La resta de {numeros} ingresados es: ", resultado_multi)
 
-elif pregunta == "tablas" or pregunta == "5":
-    numero = int(input("Ingresa un número para mostrar su tabla de multiplicar: "))
-    tabla_multiplicar(numero)
+    elif pregunta == "division" or pregunta == "3":
+        numeros = obtener_numeros()
+        resultado_division = division(numeros)
+        print(f"La resta de {numeros} ingresados es: ", resultado_division)
 
-elif pregunta == "" or pregunta >= "6":
-    print("Esa funcion no existe en la calculadora")
+    elif pregunta == "tablas" or pregunta == "5":
+        numero = int(input("Ingresa un número para mostrar su tabla de multiplicar: "))
+        tabla_multiplicar(numero)
 
+    else:
+        print("Esta funcion no existe en la calculadora")
+
+main()
         
