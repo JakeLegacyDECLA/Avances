@@ -11,3 +11,7 @@ ACTUALIZACIÓN 26/09/24
 + Se añadió la función "obtener_numeros()" que facilita la obtención de datos insertados por el usuario
 + Se añadieron ciclos "for" para leer lista
 + Ahora no se puede dividir entre 0
+
+ACTUALIZACIÓN 08/10/24
++ Se añadió la función "tabla_multiplicar()" que saca la tabla de multiplicación del 1 al 10 de un numero otorgado por el usuario
++ En la función "tabla_multiplicar()" se ocupan listas anidadas
