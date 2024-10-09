@@ -15,3 +15,4 @@ ACTUALIZACIÓN 26/09/24
 ACTUALIZACIÓN 08/10/24
 + Se añadió la función "tabla_multiplicar()" que saca la tabla de multiplicación del 1 al 10 de un numero otorgado por el usuario
 + En la función "tabla_multiplicar()" se ocupan listas anidadas
++ Ahora si metemos una cadena en la pregunta inicial, esta automaticamente se transforma en puras minusculas
