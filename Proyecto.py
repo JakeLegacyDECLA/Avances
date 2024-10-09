@@ -88,6 +88,15 @@ def division(numeros):
     return division_total
 
 def tabla_multiplicar(numero):
+    """
+    (uso de funciones, listas)
+    recibe: listas
+    se crea una lista anidada que contiene
+    los numeros del 1 al 10, para despues
+    multiplicar el numero dado por el usuario
+    con los de la lista
+    devuelve: la tabla del 1 al 10 del numero otorgado
+    """
     tabla = [[numero * i for i in range(1, 11)]]
     
     for i in range(1, 11):
