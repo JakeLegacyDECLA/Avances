@@ -2,6 +2,14 @@ Proyecto ITC 1er Semestre - CalcuTEC
 
 En este proyecto, se desarrollará un prototipo de una calculadora cientifica llamada CalcuTEC, la cual permitirá hacer diferentes operaciones conforme lo requiera el usuario, (en un futuro se irá actualizando con más funciones). Este prototipo servirá como base para futuras actualizaciones en los que se puedan implementar más funciones.
 
+REFERENCIAS EXTERNAS AL CURSO:
+
+Libreria "NumPy"
+NumPy’s module structure — NumPy v2.1 Manual. (s. f.). https://numpy.org/doc/stable/reference/module_structure.html
+
+Sentencia "Try/Except"
+Sentencias compuestas — documentación de Python - 3.9.20. (s. f.). https://docs.python.org/es/3.9/reference/compound_stmts.html?highlight=try
+
 ACTUALIZACIÓN 19/09/24
 + Se añadieron ciclos
 + Se añadieron booleanos (especificamente el "Not" !=)
