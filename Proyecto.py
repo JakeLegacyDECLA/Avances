@@ -5,7 +5,6 @@ despues hacer calculos matematicos simples e incluso complejos
 en base a las mismas formulas y usos que nos permite realizar
 Python, al final, el resultado es puesto en pantalla.
 """
-import numpy as np
 
 def obtener_numeros():
     """
