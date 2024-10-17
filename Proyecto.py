@@ -19,13 +19,15 @@ def obtener_numeros():
     """
     numeros = []
     while True:
-        entrada = input("Ingrese un número (o 'stop' para terminar): ").lower()
+        entrada = input("Ingrese un número"
+        "(o 'stop' para terminar): ").lower()
         if entrada == "stop":
             break
         try:
             numeros.append(float(entrada))
         except ValueError:
-            print("Entrada no válida, por favor ingrese un número.")
+            print("Entrada no válida,"
+            "por favor ingrese un número.")
     return numeros
 
 
@@ -94,30 +96,38 @@ def tabla_multiplicar(numero):
 
 def main():
     print("CalcuTEC")
-    pregunta = input("Seleccione su operacion a hacer \n 1. Suma \n 2. Resta \n 3. Division \n 4. Multiplicacion \n 5. Tablas de Multiplicar \n").lower()
+    pregunta = input("Seleccione su operacion a hacer"
+    "\n 1. Suma \n 2. Resta \n 3. Division \n "
+    "4. Multiplicacion \n 5. Tablas de Multiplicar \n"
+    ).lower()
 
     if pregunta in ["suma", "1"]:
         numeros = obtener_numeros()
         resultado_suma = suma(numeros)
-        print(f"La suma de {numeros} integrados es: ", resultado_suma)
+        print(f"La suma de {numeros}"
+        "integrados es: ", resultado_suma)
 
     elif pregunta in ["resta", "2"]:
         numeros = obtener_numeros()
         resultado_resta = resta(numeros)
-        print(f"La resta de {numeros} integrados es: ", resultado_resta)
+        print(f"La resta de {numeros}"
+        "integrados es: ", resultado_resta)
 
     elif pregunta in ["multiplicacion", "4"]:
         numeros = obtener_numeros()
         resultado_multi = multiplicacion(numeros)
-        print(f"La multiplicación de {numeros} ingresados es: ", resultado_multi)
+        print(f"La multiplicación de {numeros}"
+        "ingresados es: ", resultado_multi)
 
     elif pregunta in ["division", "3"]:
         numeros = obtener_numeros()
         resultado_division = division(numeros)
-        print(f"La división de {numeros} ingresados es: ", resultado_division)
+        print(f"La división de {numeros}" 
+        "ingresados es: ", resultado_division)
 
     elif pregunta in ["tablas", "5"]:
-        numero = int(input("Ingresa un número para mostrar su tabla de multiplicar: "))
+        numero = int(input("Ingresa un número"
+        "para mostrar su tabla de multiplicar: "))
         tabla_multiplicar(numero)
 
     else:
