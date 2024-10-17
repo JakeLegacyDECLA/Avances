@@ -4,11 +4,9 @@ En este proyecto, se desarrollará un prototipo de una calculadora cientifica ll
 
 REFERENCIAS EXTERNAS AL CURSO:
 
-Libreria "NumPy"
-NumPy’s module structure — NumPy v2.1 Manual. (s. f.). https://numpy.org/doc/stable/reference/module_structure.html
-
 Sentencia "Try/Except"
 Sentencias compuestas — documentación de Python - 3.9.20. (s. f.). https://docs.python.org/es/3.9/reference/compound_stmts.html?highlight=try
++ Usado para manejar errores que puedan ocurrir en el programa, enseñando en la consola el error mismo.
 
 ACTUALIZACIÓN 19/09/24
 + Se añadieron ciclos
